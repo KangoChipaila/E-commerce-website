@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+    top: 0;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -96,6 +97,7 @@ body {
 }
 
 #main-new-arrival {
+    margin-top: 7%;
     height: 400px;
     width: 100%;
     background-color: grey;
@@ -105,6 +107,8 @@ body {
     font-family: 'KyivTypeSans';
     font-size: 1.2em;
     width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     margin: 0 auto;
 }
 
@@ -152,19 +156,25 @@ body {
 #popular-items-title {
     font-family: 'KyivTypeSans';
     height: 5%;
+    padding-top: 2%;
+    padding-left: 5%;
 }
 
 #popular-item-content {
     display: grid;
     height: 92%;
     grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
 }
 
 .popular-item {
-    width: 25%;
-    height: 100px;
+    width: 50%;
+    height: 180px;
     background-color: grey;
     border: black solid;
+    border-radius: 10px;
 }
 
 .footer {
