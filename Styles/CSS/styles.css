@@ -184,3 +184,14 @@ body {
     border: black solid;
     border-radius: 10px;
 }
+
+/* Banner image styling */
+.banner img {
+  display: block;           /* makes it behave like a block element */
+  margin: 20px auto;        /* centers horizontally with top/bottom space */
+  width: 50%;               /* adjust percentage to control size */
+  max-width: 500px;         /* prevents it from being too large */
+  height: auto;             /* keeps the aspect ratio */
+  border: 3px solid #000;   
+  border-radius: 8px;       
+}
