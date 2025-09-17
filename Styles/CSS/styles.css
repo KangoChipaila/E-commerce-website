@@ -146,17 +146,21 @@ body {
     background-color: #EB001B;
 }
 
-#menproduct {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    border-bottom: 1px solid black;
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* space between items */
+  margin-bottom: 40px;
 }
 
-#womenproduct {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    border-bottom: 1px solid black;
+.product {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f8f8f8;
 }
+
 #popular-items-title {
     font-family: 'KyivTypeSans';
     height: 5%;
@@ -179,10 +183,4 @@ body {
     background-color: grey;
     border: black solid;
     border-radius: 10px;
-}
-
-#children {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    border-bottom: 1px solid black;
 }
