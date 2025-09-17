@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+    top: 0;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 4px 4px 0 #00000040;
@@ -88,6 +89,7 @@ body {
 }
 
 #main-new-arrival {
+    margin-top: 7%;
     height: 400px;
     width: 100%;
     background-color: grey;
@@ -97,6 +99,8 @@ body {
     font-family: 'KyivTypeSans';
     font-size: 1.2em;
     width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     margin: 0 auto;
 }
 
@@ -152,6 +156,29 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     border-bottom: 1px solid black;
+}
+#popular-items-title {
+    font-family: 'KyivTypeSans';
+    height: 5%;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+#popular-item-content {
+    display: grid;
+    height: 92%;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.popular-item {
+    width: 50%;
+    height: 180px;
+    background-color: grey;
+    border: black solid;
+    border-radius: 10px;
 }
 
 #children {
