@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/styles.css')}}" >
+    <script src = "{{ url_for('static', filename = 'JS/navBarLogic.js')}}" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+
+    <section id="checkout-main-content">
+        <div id = "checkout-title">
+            CHECKOUT
+        </div>
+        <form method="POST" action="{{ url_for('place_order') }}">
+            <!-- Shipping Information -->
+            <fieldset>
+                <legend>Shipping Information</legend>
+                <label>
+                    Name:
+                    <input type="text" name="name" value="{{ shipping_info.name if shipping_info else '' }}" required>
+                </label>
+                <label>
+                    Address:
+                    <input type="text" name="address" value="{{ shipping_info.address if shipping_info else '' }}" required>
+                </label>
+                <label>
+                    City:
+                    <input type="text" name="city" value="{{ shipping_info.city if shipping_info else '' }}" required>
+                </label>
+                <label>
+                    State:
+                    <input type="text" name="state" value="{{ shipping_info.state if shipping_info else '' }}" required>
+                </label>
+                <label>
+                    Zip Code:
+                    <input type="text" name="zip" value="{{ shipping_info.zip if shipping_info else '' }}" required>
+                </label>
+                <label>
+                    Country:
+                    <input type="text" name="country" value="{{ shipping_info.country if shipping_info else '' }}" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" value="{{ shipping_info.email if shipping_info else '' }}" required>
+                </label>
+            </fieldset>
+
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label>
+                    Card Number:
+                    <input type="text" name="card_number" required>
+                </label>
+                <label>
+                    Expiry Date:
+                    <input type="text" name="expiry" placeholder="MM/YY" required>
+                </label>
+                <label>
+                    CVV:
+                    <input type="text" name="cvv" required>
+                </label>
+            </fieldset>
+
+            
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top"></div>
+        <div class="footer-copyright">
+            <p>&copy; haggaisfit.com - All Rights Reserved 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

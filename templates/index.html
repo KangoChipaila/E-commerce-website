@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/styles.css')}}" >
+    <script src = "{{ url_for('static', filename = 'JS/navBarLogic.js')}}" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    <section id="main-content">
+        
+        <div id="new-arrivals">
+            <div id="main-new-arrival">
+                <!--<img src = "" />-->
+            </div>
+            <div id="sub-new-arrivals">
+                <div id="sub-new-arrival-title">
+                    New Arrivals
+                </div>
+                <div id="sub-new-arrival-content">
+
+                </div>
+            </div>
+        </div>
+        <div id="feedback-link">
+            <p id="feedback-link-text-1">HAVE SOME FEEDBACK?</p>
+            <p id="feedback-link-text-2">
+                CLICK HERE TO LET US KNOW WHAT’S ON YOUR MIND 
+            </p>
+        </div>
+        <div id="popular-items">
+            <div id="popular-items-title">POPULAR ITEMS</div>
+            <div id="popular-item-content">
+                <div class="popular-item"></div>
+                <div class="popular-item"></div>
+                <div class="popular-item"></div>
+                <div class="popular-item"></div>
+                <div class="popular-item"></div>
+                <div class="popular-item"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top"></div>
+        <div class="footer-copyright">
+            <p>&copy; haggaisfit.com - All Rights Reserved 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

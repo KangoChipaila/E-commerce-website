@@ -3,99 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/CSS/styles.css">
-    <script src = "../JS/navBarLogic.js" defer></script>
-    <title>Women</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/styles.css')}}" >
+    <script src = "{{ url_for('static', filename = 'JS/navBarLogic.js')}}" defer></script>
+    <title>Men</title>
 </head>
 <body>  
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar-main-content">
-            <div class = "logo"><a href = "./index.html">HAGGAI'S  
-                FIT</a></div>
-            <div class="shopping-tools">
-                <div class="user-account">
-                    <img src = "../img/user-2-svgrepo-com 1.svg" />
-                    <p class = "shopping-tool-button">My Account</p>
-                </div>
-                <div class="wishlist">
-                    <img src = "../img/save-wishlist-like-favorite-svgrepo-com 1.svg" />
-                    <p class = "shopping-tool-button">Wishlist</p>
-                </div>
-                <div class="cart">
-                    <img src = "../img/cart-svgrepo-com 1.svg" />
-                    <p class = "shopping-tool-button">Cart</p>
-                </div>
-            </div>
-            <div class="menu">
-                <img src = "../img/menu alt 1 1.svg" />
-                <p>Menu</p>
-            </div>
-        </div>
-        <div class="navbar-bottom"></div>
-        <div class="menu-overlay">
-            <div class="menu-overlay-content">
-                <img class = "menu-arrow" src = "../img/Red_Arrow_Down.svg" alt="red arrow">
-                <div class = "menu-link"><a href="./women.html">Women</a></div>
-                <div class = "menu-link"><a href="./men.html">Men</a></div>
-                <div class = "menu-link"><a href="./product page.html">Products</a></div>
-            </div>
-        </div>
-    </nav>
+    {% include 'partials/navbar.html' %}
 
         <section class="banner">
-            <img src="../img/stickwoman.png" alt="woman's Banner">
+            <img src="{{ url_for('static', filename = 'img/stickman.png')}}" alt="Men's Banner">
         </section>
 
+
     <!-- Main Content -->
-    <section id="womens-main-content">
+    <section id="mens-main-content">
         <div id="product-page">
             
-            <!-- Women Section -->
-            <section id="women">
-                <h1>Women's Collection</h1>
+            <!-- Men Section -->
+            <section id="men">
+                <h1>Men's Collection</h1>
                 <div class="products">
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 1">
-                        <h3>Pink Dress</h3>
+                        <h3>Men's T-Shirt</h3>
                     </div>
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 2">
-                        <h3>Floral Dress</h3>
+                        <h3>Men's T-Shirt 2</h3>
                     </div>
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 3">
-                        <h3>Blue Dress</h3>
+                        <h3>Men's T-Shirt 3</h3>
                     </div>
                 </div>
 
                 <div class="products">
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 4">
-                        <h3>Women's Shirt</h3>
+                        <h3>Men's Trousers</h3>
                     </div>
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 5">
-                        <h3>Women's Shirt 2</h3>
+                        <h3>Men's Trousers 2</h3>
                     </div>
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 6">
-                        <h3>Women's Shirt 3</h3>
+                        <h3>Men's Trousers</h3>
                     </div>
                 </div>
 
                 <div class="products">
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 4">
-                        <h3>Blue Skirt</h3>
+                        <h3>Men's Trousers 4</h3>
                     </div>
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 5">
-                        <h3>Long Skirt</h3>
+                        <h3>Men's Trousers 5</h3>
                     </div>
                     <div class="product">
                         <img src="https://via.placeholder.com/200" alt="Men Product 6">
-                        <h3>Black Skirt</h3>
+                        <h3>Men's Trousers 6</h3>
                     </div>
                 </div>
 

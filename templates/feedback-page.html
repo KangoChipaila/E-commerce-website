@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/styles.css')}}" >
+    <script src = "{{ url_for('static', filename = 'JS/navBarLogic.js')}}" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+
+    <section id="checkout-main-content">
+        <div id = "checkout-title">
+            CHECKOUT
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-top"></div>
+        <div class="footer-copyright">
+            <p>&copy; haggaisfit.com - All Rights Reserved 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
