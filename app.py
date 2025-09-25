@@ -7,6 +7,10 @@ app.secret_key = 'Navennaguduri'
 def home():
     return render_template('index.html')
 
+@app.route('/products')
+def products():
+    return render_template('product page.html')
+
 @app.route('/men')
 def men_clothing():
     return render_template('men.html')

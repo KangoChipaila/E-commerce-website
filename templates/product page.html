@@ -17,18 +17,18 @@
 
             <!-- Men Section -->
             <section id="men">
-                <h2>Men</h2>
+                <h2><a href = "/men">Men</a></h2>
                 <div class="products">
                     <div class="product">
-                        <img src="../img/mens formal trousers.png" alt="Men Product 1">
+                        <img src="{{ url_for('static', filename = 'img/mens formal trousers.png')}}" alt="Men Product 1">
                         <p>Popular</p>
                     </div>
                     <div class="product">
-                        <img src="../img/mens black long sleeve shirt.png" alt="Men Product 2">
+                        <img src="{{ url_for('static', filename = 'img/mens black long sleeve shirt.png')}}" alt="Men Product 2">
                         <p>Popular</p>
                     </div>
                     <div class="product">
-                        <img src="../img/mens navy gym shirt.png" alt="Men Product 3">
+                        <img src="{{ url_for('static', filename = 'img/mens navy gym shirt.png')}}" alt="Men Product 3">
                         <p>Popular</p>
                     </div>
                 </div>
@@ -36,42 +36,22 @@
 
             <!-- Women Section -->
             <section id="women">
-                <h2>Women</h2>
+                <h2><a href = "/women">Women</a></h2>
                 <div class="products">
                     <div class="product">
-                        <img src="../img/black dress.jpeg" alt="Women Product 1">
+                        <img src="{{ url_for('static', filename = 'img/black dress.jpeg')}}" alt="Women Product 1">
                         <p>Popular</p>
                     </div>
                     <div class="product">
-                        <img src="../img/animal print vest.png" alt="Women Product 2">
+                        <img src="{{ url_for('static', filename = 'img/animal print vest.png')}}" alt="Women Product 2">
                         <p>Popular</p>
                     </div>
                     <div class="product">
-                        <img src="../img/pink dress.jpg" alt="Women Product 3">
+                        <img src="{{ url_for('static', filename = 'img/pink dress.jpg')}}" alt="Women Product 3">
                         <p>Popular</p>
                     </div>
                 </div>
             </section>
-
-            <!-- Children Section -->
-            <section id="children">
-                <h2>Children</h2>
-                <div class="products">
-                    <div class="product">
-                        <img src="../img/childrens baseball top.png" alt="Children Product 1">
-                        <p>Children</p>
-                    </div>
-                    <div class="product">
-                        <img src="../img/childrens bucket hat.png" alt="Children Product 2">
-                        <p>Children</p>
-                    </div>
-                    <div class="product">
-                        <img src="../img/childrens sports tshirt.png" alt="Children Product 3">
-                        <p>Children</p>
-                    </div>
-                </div>
-            </section>
-
         </div>
     </section>
 
