@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/styles.css')}}" >
     <script src = "{{ url_for('static', filename = 'JS/navBarLogic.js')}}" defer></script>
-    <title>Home</title>
+    <title>Feedback</title>
 </head>
 <body>
     {% include 'partials/navbar.html' %}
 
-    <section id="checkout-main-content">
-        <div id = "checkout-title">
+    <section id="feedback-main-content">
+        <div id = "feedback-title">
             LET'S TALK
         </div>
+        <div id="feedback-form-intro">
+            <p>HELP US GET BETTER</p>
+            <img src = "{{ url_for('static', filename = 'img/Red_Arrow_Down.svg')}}" />
+        </div>
+        <form id="feedback-form" method="POST" action="">
+            <fieldset>
+                <legend id = "feedback-details-title">What's on your mind?</legend>
+                <textarea id = "feedback-details" name = "feedback-details"></textarea> 
+                <button id = "feedback-button" type = "submit">Send Feedback</button>
+            </fieldset>
+        </form>
     </section>
     
     <footer class="footer">
