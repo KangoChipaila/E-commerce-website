@@ -106,12 +106,14 @@ body {
     padding: 0;
 }
 
-.shopping-tool-button:hover {
+.shopping-tools > a:hover p{
     text-decoration: underline;
 }
 
 .user-account {
     display: flex;
+    text-decoration: none;
+    color: #000000;
     flex-direction: column;
     align-items: center;
     font-size: 0.8em;
@@ -120,6 +122,8 @@ body {
 
 .wishlist {
     display: flex;
+    text-decoration: none;
+    color: #000000;
     flex-direction: column;
     align-items: center;
     font-size: 0.8em;
@@ -128,6 +132,8 @@ body {
 
 .cart {
     display: flex;
+    text-decoration: none;
+    color: #000000;
     flex-direction: column;
     align-items: center;
     font-size: 0.8em;

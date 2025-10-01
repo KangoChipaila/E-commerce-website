@@ -3,18 +3,18 @@
             <div class = "logo"><a href = "/">HAGGAI'S  
                 FIT</a></div>
             <div class="shopping-tools">
-                <div class="user-account">
+                <a href = "/my-account" class="user-account">
                     <img src = "{{ url_for('static', filename = 'img/user-2-svgrepo-com 1.svg') }}" />
                     <p class = "shopping-tool-button">My Account</p>
-                </div>
-                <div class="wishlist">
+                </a>
+                <a href = "/wishlist" class="wishlist">
                     <img src = "{{ url_for('static', filename = 'img/save-wishlist-like-favorite-svgrepo-com 1.svg')}}" />
                     <p class = "shopping-tool-button">Wishlist</p>
-                </div>
-                <div class="cart">
+                </a>
+                <a href = "/cart" class="cart">
                     <img src = "{{ url_for('static', filename = 'img/cart-svgrepo-com 1.svg') }}" />
                     <p class = "shopping-tool-button">Cart</p>
-                </div>
+                </a>
             </div>
             <div class="menu">
                 <img src = "{{ url_for('static', filename = 'img/menu alt 1 1.svg')}}" />
