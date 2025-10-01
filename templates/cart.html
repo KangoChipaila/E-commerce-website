@@ -17,7 +17,7 @@
             <div id = "shopping-cart">
                 <div class="checkout-item">
                     <div class = "checkout-item-image">
-                        <img src = "" alt = "product image" />
+                        <img src = "{{ url_for('static', filename = 'img/')}}" alt = "product image" />
                     </div>
                     <div class="checkout-item-details">
                         <h4>DETAILS</h4>
@@ -27,7 +27,12 @@
                     </div>
                 </div>
             </div>
-            <div id = "total-and-checkout"></div>            
+            <div id = "total-and-checkout">
+                <h3 id = "total-price">Total Price: <br> K{{ total_price}}</h3>
+                <button id = "move-to-wishlist-button">Move Items to Wishlist</button>
+                <button id = "to-checkout-button">Go to Checkout</button>
+                
+            </div>            
         </div>
     </section>
     

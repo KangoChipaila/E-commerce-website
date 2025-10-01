@@ -19,7 +19,7 @@
         <h2 id = "shipping-and-payment-information-title">Shipping and Payment Information</h2>
         <form id="checkout-forms" method="POST" action="{{ url_for('place_order') }}">
             <fieldset id = "shipping-information">
-                <legend>Shipping Information</legend>
+                <legend><h4>Shipping Information</h4></legend>
                 <label>
                     Name:
                     <input type="text" name="name" value="{{ shipping_info.name if shipping_info else '' }}" required>
@@ -52,7 +52,7 @@
 
             <!-- Payment Information -->
             <fieldset id = "payment-information">
-                <legend>Payment Information</legend>
+                <legend><h4>Payment Information</h4></legend>
                 <label>
                     Mobile Money Number:
                     <input type="text" name="mobile_money_number" placeholder="e.g. 095/075XXXXXXX" maxlength="10" required>

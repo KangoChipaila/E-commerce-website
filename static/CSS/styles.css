@@ -152,6 +152,7 @@ body {
     width: 70%;
     height: 100%;
     box-shadow: 0px 4px 4px #00000040;
+    border-radius: 10px;
     overflow-y: scroll;
 }
 
@@ -176,8 +177,50 @@ body {
 
 #total-and-checkout {
     width: 20%;
-    height: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     box-shadow: 0px 4px 4px #00000040;
+    border-radius: 10px;
+}
+
+#total-price {
+    width: 50%;
+}
+
+#move-to-wishlist-button {
+    border: #000000 solid 1px;
+    border-radius: 40px;
+    color: #000000;
+    font-size: 0.9em;
+    width: 60%;
+    height: 18%;
+    padding: 1.5% 1.5%;
+    background-color: #FFFFFF;
+}
+
+#move-to-wishlist-button:hover {
+    border: none;
+    color: #FFFFFF;
+    background-color: #F71731;
+}
+
+#to-checkout-button {
+    border: none;
+    border-radius: 40px;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    width: 60%;
+    height: 18%;
+    padding: 1.5% 1.5%;
+    background-color: #000000;
+    margin-bottom: 5%;
+}
+
+#to-checkout-button:hover {
+    background-color: #F71731;
 }
 
 .menu {
